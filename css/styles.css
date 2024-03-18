@@ -1,0 +1,259 @@
+header {
+    background-image: url('pictures/footer.png');
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 28px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 17px 0 rgb(36, 36, 36);
+    color: white;
+    padding: auto;
+}
+
+body {
+    font-family: sans-serif;
+    margin-top: 80px;
+    padding: 30px;
+    background-image: url('/css/pictures/background.png');
+    background-size: cover;
+    background-position: center;
+    font-size: 19px;
+    position: relative;
+    min-height: 100vh;
+}
+
+footer {
+    width: 100%;
+    height: 6rem;
+    text-align: center;
+    color: white;
+    background-image: url('pictures/footer.png');
+
+}
+
+@font-face {
+    font-family: "nightside";
+    src: url('fonts/NightsideDemoRegular.ttf');
+}
+
+
+
+nav {
+    background-image: url('pictures/footer.png');
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 17px 0 rgb(36, 36, 36);
+    color: rgb(125, 125, 125);
+    padding: auto;
+    display: flex;
+    justify-content: center;
+
+    z-index: 15;
+    color: white;
+}
+
+nav * {
+    display: inline;
+}
+
+
+nav a {
+    text-decoration: none;
+    padding: 20px 40px;
+    margin: 0 10px;
+    display: block;
+    color: white;
+    background-color: #00000088;
+    transition: background-color 0.3s ease;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+}
+
+nav li a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #ffffffc8;
+    color: #000000;
+}
+
+
+.container {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.mycontainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mycontainer>div {
+    width: 33%;
+    padding: 0 20px;
+
+}
+
+.spec-cont {
+    margin: auto;
+    padding: 40px 80px 70px;
+    text-align: center;
+    background-image: radial-gradient(circle, #fbf7f5, #fbf7f5a9, #fbf7f500);
+
+}
+
+.myspec-cont {
+    display: flex;
+}
+
+.myspec-cont>div {
+    width: 33%;
+    padding: 0 60px;
+
+}
+
+div.scroll-container {
+   
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+div.scroll-container img {
+    padding: 10px;
+    align-content: center;
+    height: 500px;
+}
+
+pre {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+}
+
+table {
+    text-align: center;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    background-color: #d5b5fce5;
+}
+
+td,
+th {
+    border: 4px solid #613399;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #c291fdb9;
+}
+
+.button {
+    display: inline-block;
+    background-image: url('pictures/footer.png');
+    box-shadow: 20px 20px 50px rgb(52, 52, 52);
+    text-shadow: 10px 10px 10px#000000;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.flip-box {
+    width: 350px;
+    height: 350px;
+    font-size: 17px;
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+    
+}
+
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+}
+
+.flip-box-front {
+   
+    color: black;
+}
+
+
+.flip-box-back {
+   background-color: #1c1c1c;
+    color: rgb(210, 210, 210);
+    transform: rotateY(180deg);
+    padding: 9px;
+}
